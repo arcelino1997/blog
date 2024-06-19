@@ -7,15 +7,44 @@ body {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 header{
     background-color: brown;
     width: 100%;
     height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
+header ul{
+  display: flex;
+  gap: 1.25rem;
+}
+
 main{
-    width: 50%;
-    margin-left: 25%;
+    width: 85%;
+    display: flex;
+    gap: 40px;
+}
+main section{
+  width: 75%;
+}
+aside{
+  width: 25%;
+}
+aside section{
+  display: flex;
+  flex-direction: column;
+ 
+  text-align: center;
+}
+img{
+  width: 100px;
+  
 }
 h1{
   padding-top: 4rem;
@@ -31,6 +60,11 @@ h1{
   }
   ul li{
     font-size: 1.5rem;
+    text-decoration: none;
+    list-style: none;
+  }
+  ul li:hover{
+    cursor: pointer;
   }
   footer{
     background-color: brown;
